@@ -1,11 +1,12 @@
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
+import 'sendbird-uikit/dist/index.css';
+import dynamic from 'next/dynamic';
 
-const Home: NextPage = () => {
-  return (
-    <div>
-      Hello, World
-    </div>
-  )
-}
+const DynamicAppWithNoSSR = dynamic(() => import("../components/Chat/Chat"), {
+  ssr: false,
+  loading: () => <p>...</p>
+});
 
-export default Home
+const Home: NextPage = () => (<DynamicAppWithNoSSR />);
+
+export default Home;
