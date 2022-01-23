@@ -2021,7 +2021,7 @@ sendbird-uikit@^2.5.3:
     prop-types "^15.7.2"
     sendbird "^3.1.4"
 
-sendbird@^3.1.4:
+sendbird@^3.1.4, sendbird@^3.1.7:
   version "3.1.7"
   resolved "https://registry.yarnpkg.com/sendbird/-/sendbird-3.1.7.tgz#37881d010c27cf8117e08cd0bdec03679bb37063"
   integrity sha512-PGYfew/Aon6FqtzeJtYwk2/Bl1zsR4ewvoLkiJatVGpuSeKiMa6beXRT8hYQLpYVFF2HdzgeVfs7AgQ/zYEp1g==
